@@ -91,5 +91,5 @@ This project demonstrated how **Spark + Azure Blob + PostgreSQL** can handle lar
 
 ---
 
-👩‍💻 **Author:** Priya Sethi Khurana  
-🎓 MSc Data Analytics — National College of Ireland  
+ **Author:** Priya Sethi Khurana  
+
