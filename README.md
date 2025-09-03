@@ -14,7 +14,7 @@ This is a **scalable end-to-end big data pipeline** to analyze **Apple App Store
 
 The goal was to extract insights about **application categories, pricing strategies, update cadence, and popularity trends**. The entire workflow is **cloud-ready** and can be automated through a batch script.  
 
-![Workflow](assets/Workflow.png)
+![Workflow](Workflow.png)
 
 ---
 
@@ -24,17 +24,17 @@ The goal was to extract insights about **application categories, pricing strateg
 - **Format:** CSV uploaded into **Azure Blob Storage**  
 - **Features:** App name, category, size, price, ratings, last update, etc.  
 
-![Azure Blob Storage](assets/Azure Blobstorage.png)
+![Azure Blob Storage](Azure%20Blobstorage.png)
 
 ---
 
 ## Major Steps Followed
 1. **Dataset Upload** – Uploaded the Apple App Store dataset into **Azure Blob Storage**.  
 2. **Spark Ingestion** – Initialized a Spark session and retrieved data directly from Blob.  
-   ![Spark Session](assets/Retrived Data back in spark session.png)  
+   ![Spark Session](Retrived%20Data%20back%20in%20spark%20session.png)  
 3. **Data Preprocessing** – Cleaned null values, standardized types, handled outliers.  
 4. **Database Storage** – Loaded the curated data into **PostgreSQL** for structured persistence.  
-   ![PostgreSQL](assets/Postgres SQL.png)  
+   ![PostgreSQL](Postgres%20SQL.png)  
 5. **Data Export** – Extracted PostgreSQL tables into CSV for downstream analysis.  
 6. **Exploratory Visualizations** – Created plots using Python/Seaborn and Tableau dashboards.  
 7. **Automation** – Built an automated ETL pipeline triggered by a batch script.
@@ -47,7 +47,7 @@ The goal was to extract insights about **application categories, pricing strateg
 - **Games, Business, and Education** apps are much larger in size.  
 - **Weather and Magazines** are the lightest.  
 
-![App by Size](assets/App by size.png)
+![App by Size](App%20by%20size.png)
 
 ---
 
@@ -55,7 +55,7 @@ The goal was to extract insights about **application categories, pricing strateg
 - **Weather, Games, and Photo/Video** apps are most popular.  
 - **Developer Tools and Food & Drink** apps show the least popularity.  
 
-![App Popularity](assets/App popularity by category.png)
+![App Popularity](App%20popularity%20by%20category.png)
 
 ---
 
@@ -63,7 +63,7 @@ The goal was to extract insights about **application categories, pricing strateg
 - **Free apps** have slightly higher ratings than **Paid apps**.  
 - Pricing is not the sole determinant of satisfaction — UX plays a big role.  
 
-![Free vs Paid](assets/Avg user ratings.png)
+![Free vs Paid](Avg%20user%20ratings.png)
 
 ---
 
@@ -71,7 +71,7 @@ The goal was to extract insights about **application categories, pricing strateg
 - **Games and Shopping apps** update frequently.  
 - **Weather, Magazines, and News apps** update much less often.  
 
-![Update Frequency](assets/Avg day between updates .png)
+![Update Frequency](Avg%20day%20between%20updates%20.png)
 
 ---
 
