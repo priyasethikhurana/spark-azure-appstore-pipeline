@@ -14,9 +14,7 @@ This project builds a **scalable end-to-end big data pipeline** to analyze **App
 
 The main aim was to extract insights on **application characteristics, pricing strategies, update patterns, and popularity trends** at scale. By leveraging distributed processing, the pipeline is **automated and cloud-ready**.  
 
-Below is an overview of the **Azure Storage Account** with the raw dataset:
-
-![Azure Storage](assets/azure_blob_overview.png)
+![Pipeline Architecture](assets/pipeline_architecture.png)
 
 ---
 
@@ -25,6 +23,8 @@ Below is an overview of the **Azure Storage Account** with the raw dataset:
 - **Source:** Kaggle (public dataset)  
 - **Format:** CSV stored in **Azure Blob Storage**  
 - **Features:** App name, category, size, price, ratings, last update, etc.  
+
+![Azure Storage](assets/azure_blob_storage.png)
 
 ---
 
@@ -39,9 +39,8 @@ Below is an overview of the **Azure Storage Account** with the raw dataset:
 8. Build an interactive **Tableau dashboard** for combined insights.  
 9. Automate the entire ETL pipeline using a batch script (`.sh` / `.bat`).  
 
-The figure below shows the **Azure Blob Container** with uploaded dataset:
-
-![Azure Container](assets/azure_blob_container.png)
+![PostgreSQL Database](assets/postgres_query.png)  
+![Azure <-> Spark](assets/azure_spark_connection.png)
 
 ---
 
@@ -59,7 +58,7 @@ The figure below shows the **Azure Blob Container** with uploaded dataset:
 - Weather, Games, and Photo/Video apps are among the most popular.  
 - Developer Tools and Food-related apps see lower engagement.  
 
-![Category Popularity](assets/rating_by_category.png)
+![Category Popularity](assets/app_popularity.png)
 
 ---
 
@@ -67,7 +66,7 @@ The figure below shows the **Azure Blob Container** with uploaded dataset:
 - Free apps generally receive **slightly higher ratings** than paid apps.  
 - Indicates that **pricing is not the only determinant** of user satisfaction.  
 
-![Free vs Paid Ratings](assets/free_vs_paid_rating.png)
+![Free vs Paid Ratings](assets/free_vs_paid.png)
 
 ---
 
@@ -75,14 +74,7 @@ The figure below shows the **Azure Blob Container** with uploaded dataset:
 - Games and Shopping apps are updated more frequently.  
 - Weather, News, and Magazines show longer gaps between updates.  
 
-![Update Frequency](assets/update_duration_by_category.png)
-
----
-
-### 5. Interactive Dashboard
-A **Tableau dashboard** integrates these insights for trend analysis, category-level drilldowns, and pricing comparisons.  
-
-![Tableau Dashboard](assets/tableau_dashboard.png)
+![Update Frequency](assets/update_frequency.png)
 
 ---
 
@@ -104,5 +96,3 @@ This project successfully deployed a **cloud-based, automated big data pipeline*
 
 👩‍💻 **Author:** Priya Sethi Khurana  
 🎓 MSc Data Analytics — National College of Ireland  
-<img width="742" height="172" alt="image" src="https://github.com/user-attachments/assets/b436d435-9ef6-4415-b4cb-4d889bbe1e60" />
-
